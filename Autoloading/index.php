@@ -1,8 +1,8 @@
 <?php
 
-require './vendor/autoload.php'; 
+require "./vendor/autoload.php"; 
 
+use App\Vehicles\Car;
 
-
-$car = new App\Vehicles\Car();
+$car = new Car();
 $car->honk();
