@@ -4,7 +4,15 @@ interface Shape {
     public function area();
 }
 
-class Square implements Shape {
+interface Color {
+    public function area();
+}
+
+interface Shape {
+    public function area();
+}
+
+class Square implements Shape, Color {
     private $side;
 
     public function __construct($side) {
@@ -33,3 +41,5 @@ echo 'Area of Square: ' . $square->area() . "\n";
 
 $circle = new Circle(3);
 echo 'Area of Circle: ' . $circle->area() . "\n";
+
+

@@ -2,10 +2,10 @@
 
 class Human{
 
-    private $name;
-    private $age;
-    private $height;
-    private $isMale = false;
+    protected $name;
+    protected $age;
+    protected $height;
+    protected $isMale = false;
 
     public function __construct()
     {

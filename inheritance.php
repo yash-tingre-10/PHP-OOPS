@@ -8,7 +8,7 @@ abstract class Shape{
         $this->color = $Newcolor;
     }
 
-    abstract protected function calcArea();
+    abstract protected function area();
 
 }
 
@@ -21,7 +21,7 @@ class Square extends Shape{
         $this->side = $s;
     }
 
-    public function calcArea(){
+    public function area(){
         return $this->side * $this->side;
     }
 
@@ -36,7 +36,7 @@ class Circle extends Shape{
         $this->radius = $r;
     }
 
-    public function calcArea(){
+    public function area(){
 
         return M_PI * pow($this->radius, 2);
     }
@@ -45,7 +45,7 @@ class Circle extends Shape{
 
 $shape1 = new Circle(5);
 var_dump($shape1);
-var_dump($shape1->calcArea());
+var_dump($shape1->area());
 
 ?>
 
